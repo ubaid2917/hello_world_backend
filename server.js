@@ -1,3 +1,23 @@
+const express = require('express');
+const app = express();
+const db = require('./db');
+const bodyParser = require('body-parser');
+require('dotenv').config();
+
+const port = process.env.PORT || 3000;
+
+
+app.listen(port, function(req,res){
+    console.log(`listening on port ${port}`);
+})
+
+
+
+
+
+
+
+
 // // function test(a,b){
 // //     return a + b;
 // // }
@@ -69,11 +89,11 @@ var _ = require('lodash');
 
 // consvert string into object 
 
-const strtoObj = '{"firstName": "ubaid", "lastName": "naeem", "age": "20"}';
-const convert = JSON.parse(strtoObj);
-console.log(convert); 
+// const strtoObj = '{"firstName": "ubaid", "lastName": "naeem", "age": "20"}';
+// const convert = JSON.parse(strtoObj);
+// console.log(convert); 
 
 
-const objtoStr = {firstName: "ubaid", lastName: "naeem", age: "20"};
-const res = JSON.stringify(objtoStr);
-console.log(res);
+// const objtoStr = {firstName: "ubaid", lastName: "naeem", age: "20"};
+// const res = JSON.stringify(objtoStr);
+// console.log(res); 
